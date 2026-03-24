@@ -1,3 +1,0 @@
-# Hybrid Beta Mod
-
-## Features
