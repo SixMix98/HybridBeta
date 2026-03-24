@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.SixMix98.hybridbeta.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PickaxeItemMixin",
+    "LeavesBlockMixin",
+    "GiantEntityMixin",
+    "BiomeMixin",
+    "DeadBushBlockMixin",
+    "FishingBobberEntityMixin",
+    "GhastEntityMixin",
+    "LockedChestBlockMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

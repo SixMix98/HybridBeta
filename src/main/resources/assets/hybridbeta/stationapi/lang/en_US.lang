@@ -1,0 +1,6 @@
+# @ is a shorthand for the current mod id, which is hybridbeta. E.g: tile.@.redclay.name
+tile.@.redstone_block.name=Block of Redstone
+tile.@.coal_block.name=Block of Coal
+tile.@.brick_stairs.name=Brick Stairs
+tile.@.sandstone_stairs.name=Sandstone Stairs
+item.@.quiver.name=Quiver
