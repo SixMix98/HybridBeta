@@ -12,11 +12,20 @@ public class QuiverItem extends TemplateItem {
         this.maxCount = 1;
         this.setMaxDamage(512);
     }
+
+    // On right click searches the user's inventory for arrows and adds to quiver
     public ItemStack use(ItemStack stack, World world, PlayerEntity user) {
         for (int i = 0; i < user.inventory.main.length; i++) {
             if (user.inventory.main[i] instanceof ItemStack && user.inventory.main[i].itemId == ARROW.id) {
-                stack.damage(-user.inventory.main[i].count, user);
-                user.inventory.removeStack(i, user.inventory.main[i].count);
+                if (stack.getDamage2() >= 64) {
+                    stack.damage(-user.inventory.main[i].count, user);
+                    user.inventory.removeStack(i, user.inventory.main[i].count);
+                }
+                // Will not consume excess arrows
+                else {
+                    user.inventory.removeStack(i, stack.getDamage2());
+                    stack.damage(-stack.getDamage2(), user);
+                }
             }
         }
 

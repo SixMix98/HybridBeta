@@ -13,6 +13,7 @@ import java.util.Random;
 @Mixin(FishingBobberEntity.class)
 public abstract class FishingBobberEntityMixin {
 
+    // There is a 1 in 8 chance of fishing a sponge
     @Redirect(method = "use", at= @At(value = "NEW", target = "net/minecraft/item/ItemStack"))
     private ItemStack remapFishItem(Item item) {
         return new Random().nextInt(8) == 0 ? new ItemStack(Block.SPONGE) : new ItemStack(Item.RAW_FISH);

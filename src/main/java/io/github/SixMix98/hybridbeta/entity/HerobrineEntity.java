@@ -27,7 +27,7 @@ public class HerobrineEntity extends MonsterEntity {
 
     // Can spawn as long as difficulty is normal or hard.  Odds of spawning are very low
     public boolean canSpawn() {
-        return this.world.difficulty > 1 && this.world.canSpawnEntity(this.boundingBox) && this.world.getEntityCollisions(this, this.boundingBox).size() == 0 && !this.world.isBoxSubmergedInFluid(this.boundingBox) && this.world.random.nextInt(100) == 0;
+        return this.world.difficulty > 1 && this.world.canSpawnEntity(this.boundingBox) && this.world.getEntityCollisions(this, this.boundingBox).size() == 0 && !this.world.isBoxSubmergedInFluid(this.boundingBox) && this.world.random.nextInt(1000) == 0;
     }
 
     // Will attack the player if they are within 8 blocks
@@ -43,7 +43,7 @@ public class HerobrineEntity extends MonsterEntity {
     // Occasionally stops to look at player for 5 seconds
     public void tick() {
         super.tick();
-        player = this.world.getClosestPlayer(this, 30.0F);
+        player = this.world.getClosestPlayer(this, 40.0F);
         if (player != null) {
             float distance = (this.getDistance(player));
             if (distance > 8.0F) {
@@ -57,10 +57,11 @@ public class HerobrineEntity extends MonsterEntity {
             }
         }
         else {
+            // May place redstone torches in dark areas
             int var1 = MathHelper.floor(this.x);
             int var2 = MathHelper.floor(this.boundingBox.minY);
             int var3 = MathHelper.floor(this.z);
-            if (this.world.getLightLevel(var1, var2, var3) < 5 && this.world.getBlockId(var1, var2, var3) == 0 && this.world.random.nextInt(1000) == 0 && this.world.hasSkyLight(var1, var2, var3)) {
+            if (this.world.getLightLevel(var1, var2, var3) < 5 && this.world.getBlockId(var1, var2, var3) == 0 && this.world.random.nextInt(10000) == 0 && this.world.hasSkyLight(var1, var2, var3)) {
                 this.world.setBlock(var1, var2, var3, Block.REDSTONE_TORCH.id);
             }
         }

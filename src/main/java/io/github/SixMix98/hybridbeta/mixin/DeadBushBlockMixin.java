@@ -15,6 +15,7 @@ public class DeadBushBlockMixin extends PlantBlock {
         this.setBoundingBox(0.5F - var3, 0.0F, 0.5F - var3, 0.5F + var3, 0.8F, 0.5F + var3);
     }
 
+    // Dead bush is harvestable
     public int getDroppedItemId(int blockMeta, Random random) {
 
         return Block.DEAD_BUSH.id;

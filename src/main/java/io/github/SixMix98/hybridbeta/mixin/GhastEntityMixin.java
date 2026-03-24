@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.Mixin;
 public class GhastEntityMixin extends FlyingEntity {
     public GhastEntityMixin(World world) { super(world); }
 
+    // Redirected fireballs are an instant kill
     public boolean damage(Entity damageSource, int amount) {
         if (damageSource instanceof GhastEntity) {
             amount = 50;
