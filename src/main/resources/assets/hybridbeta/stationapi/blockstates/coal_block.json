@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "hybridbeta:block/coal_block" }
+  }
+}

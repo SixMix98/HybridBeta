@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ll",
+    "ll",
+    "ll"
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:leather"
+    }
+  },
+
+  "result": {
+    "item": "hybridbeta:quiver",
+    "count": 1,
+    "damage": 512
+  }
+}

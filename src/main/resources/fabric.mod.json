@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "hybridbeta",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Hybrid Beta",
+  "description": "Adding new and old features to Beta 1.7.3 as well as several improvements",
   "authors": [
-    "Me!"
+    "SixMix"
   ],
   "contact": {
     "homepage": "https://glass-launcher.net/",
@@ -14,12 +14,17 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "icon": "assets/hybridbeta/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "io.github.SixMix98.hybridbeta.events.init.InitListener",
+      "io.github.SixMix98.hybridbeta.events.init.BlockListener",
+      "io.github.SixMix98.hybridbeta.events.init.FuelListener",
+      "io.github.SixMix98.hybridbeta.events.init.EntityListener",
+      "io.github.SixMix98.hybridbeta.events.init.client.EntityRenderers",
+      "io.github.SixMix98.hybridbeta.events.init.ItemListener"
     ],
     "stationapi:event_bus_client": [
     ],
@@ -27,10 +32,14 @@
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "hybridbeta.mixins.json"
   ],
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "suggests": {
+    "retrocommands": "*"
   }
 }
