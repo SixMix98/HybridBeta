@@ -17,14 +17,15 @@ public class QuiverItem extends TemplateItem {
     public ItemStack use(ItemStack stack, World world, PlayerEntity user) {
         for (int i = 0; i < user.inventory.main.length; i++) {
             if (user.inventory.main[i] instanceof ItemStack && user.inventory.main[i].itemId == ARROW.id) {
-                if (stack.getDamage2() >= 64) {
-                    stack.damage(-user.inventory.main[i].count, user);
-                    user.inventory.removeStack(i, user.inventory.main[i].count);
+                int damage = stack.getDamage2();
+                if (user.inventory.main[i].count >= damage) {
+                    user.inventory.removeStack(i, damage);
+                    stack.setDamage(0);
                 }
                 // Will not consume excess arrows
                 else {
-                    user.inventory.removeStack(i, stack.getDamage2());
-                    stack.damage(-stack.getDamage2(), user);
+                    stack.damage(-user.inventory.main[i].count, user);
+                    user.inventory.removeStack(i, user.inventory.main[i].count);
                 }
             }
         }

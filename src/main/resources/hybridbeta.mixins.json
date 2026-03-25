@@ -11,7 +11,8 @@
     "DeadBushBlockMixin",
     "FishingBobberEntityMixin",
     "GhastEntityMixin",
-    "LockedChestBlockMixin"
+    "LockedChestBlockMixin",
+    "BowItemMixin"
   ],
   "server": [
   ],
