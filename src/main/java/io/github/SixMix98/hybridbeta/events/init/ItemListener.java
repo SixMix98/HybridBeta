@@ -22,10 +22,10 @@ public class ItemListener {
     @EventListener
     public void registerItems(ItemRegistryEvent event) {
         QUIVER = new QuiverItem(NAMESPACE.id("quiver")).setTranslationKey(NAMESPACE, "quiver");
-        STUDDED_HELMET = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_helmet"), 2, 3, 0).setTexturePosition(3,0).setTranslationKey("helmetStudded").setMaxDamage(99);
-        STUDDED_CHESTPLATE = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_chestplate"), 2, 3, 1).setTexturePosition(3,1).setTranslationKey("chestplateStudded").setMaxDamage(144);
-        STUDDED_LEGGINGS = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_leggings"), 2, 3, 2).setTexturePosition(3,2).setTranslationKey("leggingsStudded").setMaxDamage(135);
-        STUDDED_BOOTS = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_boots"), 2, 3, 3).setTexturePosition(3,3).setTranslationKey("bootsStudded").setMaxDamage(117);
+        STUDDED_HELMET = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_helmet"), 2, 3, 0).setTexturePosition(3,0).setTranslationKey(NAMESPACE, "studded_helmet").setMaxDamage(99);
+        STUDDED_CHESTPLATE = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_chestplate"), 2, 3, 1).setTexturePosition(3,1).setTranslationKey(NAMESPACE, "studded_chestplate").setMaxDamage(144);
+        STUDDED_LEGGINGS = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_leggings"), 2, 3, 2).setTexturePosition(3,2).setTranslationKey(NAMESPACE, "studded_leggings").setMaxDamage(135);
+        STUDDED_BOOTS = new StuddedArmorItem(InitListener.NAMESPACE.id("studded_boots"), 2, 3, 3).setTexturePosition(3,3).setTranslationKey(NAMESPACE, "studded_boots").setMaxDamage(117);
 
 
     }

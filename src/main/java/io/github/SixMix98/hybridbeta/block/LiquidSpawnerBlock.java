@@ -1,6 +1,5 @@
 package io.github.SixMix98.hybridbeta.block;
 
-import net.minecraft.block.LiquidBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.template.block.TemplateLiquidBlock;
@@ -13,10 +12,12 @@ public class LiquidSpawnerBlock extends TemplateLiquidBlock {
         super(identifier, material);
     }
 
+    //Spawns either lava or water sources at the corners
     public void onTick(World world, int x, int y, int z, Random random) {
         int[] offsets = {-1, 1};
         for (int dx : offsets) {
             for (int dz : offsets) {
+                // Checks to make sure the corners are not occupied by another block
                 if (world.getBlockId(x + dx, y, z + dz) == 0) {
                     world.setBlock(x + dx, y, z + dz, (this.material == Material.WATER ? FLOWING_WATER.id : FLOWING_LAVA.id));
                 }

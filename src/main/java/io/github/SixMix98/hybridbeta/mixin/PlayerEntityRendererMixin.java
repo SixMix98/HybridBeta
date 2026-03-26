@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 public class PlayerEntityRendererMixin {
     @WrapOperation(method = "bindTexture(Lnet/minecraft/entity/player/PlayerEntity;IF)Z", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/entity/PlayerEntityRenderer;bindTexture(Ljava/lang/String;)V"))
     private void setArmorTexture(PlayerEntityRenderer renderer, String texture, Operation<Void> operation, @Local(ordinal = 0) int type, @Local ArmorItem item) {
+        // Uses studded armor texture when appropriate
         if (item instanceof StuddedArmorItem studdedArmor) {
             operation.call(renderer, studdedArmor.texturePath);
         }

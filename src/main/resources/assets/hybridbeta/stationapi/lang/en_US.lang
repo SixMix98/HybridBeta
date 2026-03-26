@@ -6,3 +6,7 @@ tile.@.sandstoneStairs.name=Sandstone Stairs
 tile.@.waterSpawner.name =Water Spawner
 tile.@.lavaSpawner.name =Lava Spawner
 item.@.quiver.name=Quiver
+item.@.studded_boots.name=Studded Boots
+item.@.studded_leggings.name=Studded Leggings
+item.@.studded_chestplate.name=Studded Chestplate
+item.@.studded_helmet.name=Studded Helmet
