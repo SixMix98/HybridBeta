@@ -12,7 +12,8 @@
     "FishingBobberEntityMixin",
     "GhastEntityMixin",
     "LockedChestBlockMixin",
-    "BowItemMixin"
+    "BowItemMixin",
+    "PlayerEntityRendererMixin"
   ],
   "server": [
   ],
