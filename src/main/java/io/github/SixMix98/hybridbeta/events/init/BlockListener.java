@@ -25,7 +25,7 @@ public class BlockListener {
         REDSTONE_BLOCK = new RedstoneBlock(InitListener.NAMESPACE.id("redstone_block"), Material.STONE).setHardness(3.0f).setResistance(5.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "redstone_block");
         COAL_BLOCK = new CoalBlock(InitListener.NAMESPACE.id("coal_block"), Material.STONE).setHardness(3.0f).setResistance(5.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "coal_block");
         BRICK_STAIRS = new TemplateStairsBlock(InitListener.NAMESPACE.id("brick_stairs"), Block.BRICKS).ignoreMetaUpdates().setTranslationKey(InitListener.NAMESPACE, "brickStairs");
-        BRICK_STAIRS = new TemplateStairsBlock(InitListener.NAMESPACE.id("sandstone_stairs"), Block.SANDSTONE).ignoreMetaUpdates().setTranslationKey(InitListener.NAMESPACE, "sandstoneStairs");
+        SANDSTONE_STAIRS = new TemplateStairsBlock(InitListener.NAMESPACE.id("sandstone_stairs"), Block.SANDSTONE).ignoreMetaUpdates().setTranslationKey(InitListener.NAMESPACE, "sandstoneStairs");
         WATER_SPAWNER = new LiquidSpawnerBlock(InitListener.NAMESPACE.id("water_spawner"), Material.WATER).setHardness(100.0f).setOpacity(3).setTranslationKey(InitListener.NAMESPACE, "waterSpawner").disableTrackingStatistics().ignoreMetaUpdates();
         LAVA_SPAWNER = new LiquidSpawnerBlock(InitListener.NAMESPACE.id("lava_spawner"), Material.LAVA).setHardness(0.0f).setLuminance(1.0f).setOpacity(255).setTranslationKey(InitListener.NAMESPACE, "lavaSpawner").disableTrackingStatistics().ignoreMetaUpdates();
 
@@ -34,7 +34,6 @@ public class BlockListener {
                 COAL_BLOCK,
                 BRICK_STAIRS,
                 SANDSTONE_STAIRS,
-                BRICK_SLAB,
                 WATER_SPAWNER,
                 LAVA_SPAWNER
         };
