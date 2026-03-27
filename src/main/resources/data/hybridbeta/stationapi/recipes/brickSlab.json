@@ -1,8 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "b  ",
-    "bb ",
     "bbb"
   ],
   "key": {
@@ -11,7 +9,7 @@
     }
   },
   "result": {
-    "item": "hybridbeta:brick_stairs",
-    "count": 4
+    "item": "hybridbeta:brick_slab",
+    "count": 3
   }
 }

@@ -2,6 +2,7 @@
 tile.@.redstone_block.name=Block of Redstone
 tile.@.coal_block.name=Block of Coal
 tile.@.brickStairs.name=Brick Stairs
+tile.@.brickSlab.name=Brick Slab
 tile.@.sandstoneStairs.name=Sandstone Stairs
 tile.@.waterSpawner.name =Water Spawner
 tile.@.lavaSpawner.name =Lava Spawner

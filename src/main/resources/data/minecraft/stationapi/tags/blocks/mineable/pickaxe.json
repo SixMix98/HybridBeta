@@ -3,6 +3,8 @@
     "hybridbeta:redstone_block",
     "hybridbeta:coal_block",
     "hybridbeta:brick_stairs",
-    "hybridbeta:sandstone_stairs"
+    "hybridbeta:sandstone_stairs",
+    "hybridbeta:brick_slab",
+    "hybridbeta:brick_double_slab"
   ]
 }

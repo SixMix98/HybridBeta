@@ -1,5 +1,6 @@
 package io.github.SixMix98.hybridbeta.events.init;
 
+import io.github.SixMix98.hybridbeta.block.BrickSlabBlock;
 import io.github.SixMix98.hybridbeta.block.CoalBlock;
 import io.github.SixMix98.hybridbeta.block.LiquidSpawnerBlock;
 import io.github.SixMix98.hybridbeta.block.RedstoneBlock;
@@ -7,7 +8,6 @@ import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
-import net.modificationstation.stationapi.api.template.block.TemplateLiquidBlock;
 import net.modificationstation.stationapi.api.template.block.TemplateStairsBlock;
 
 public class BlockListener {
@@ -17,6 +17,7 @@ public class BlockListener {
     public static Block BRICK_STAIRS;
     public static Block SANDSTONE_STAIRS;
     public static Block BRICK_SLAB;
+    public static Block BRICK_DOUBLE_SLAB;
     public static Block WATER_SPAWNER;
     public static Block LAVA_SPAWNER;
 
@@ -28,6 +29,8 @@ public class BlockListener {
         SANDSTONE_STAIRS = new TemplateStairsBlock(InitListener.NAMESPACE.id("sandstone_stairs"), Block.SANDSTONE).ignoreMetaUpdates().setTranslationKey(InitListener.NAMESPACE, "sandstoneStairs");
         WATER_SPAWNER = new LiquidSpawnerBlock(InitListener.NAMESPACE.id("water_spawner"), Material.WATER).setHardness(100.0f).setOpacity(3).setTranslationKey(InitListener.NAMESPACE, "waterSpawner").disableTrackingStatistics().ignoreMetaUpdates();
         LAVA_SPAWNER = new LiquidSpawnerBlock(InitListener.NAMESPACE.id("lava_spawner"), Material.LAVA).setHardness(0.0f).setLuminance(1.0f).setOpacity(255).setTranslationKey(InitListener.NAMESPACE, "lavaSpawner").disableTrackingStatistics().ignoreMetaUpdates();
+        BRICK_SLAB = new BrickSlabBlock(InitListener.NAMESPACE.id("brick_slab"), false).setHardness(2.0f).setResistance(10.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "brickSlab");
+        BRICK_DOUBLE_SLAB = new BrickSlabBlock(InitListener.NAMESPACE.id("brick_double_slab"), true).setHardness(2.0f).setResistance(10.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "brickDoubleSlab").disableAutoItemRegistration();
 
         blocks = new Block[] {
                 REDSTONE_BLOCK,
@@ -35,7 +38,9 @@ public class BlockListener {
                 BRICK_STAIRS,
                 SANDSTONE_STAIRS,
                 WATER_SPAWNER,
-                LAVA_SPAWNER
+                LAVA_SPAWNER,
+                BRICK_SLAB,
+                BRICK_DOUBLE_SLAB
         };
     }
 }
