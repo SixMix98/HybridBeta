@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "hhh",
+    "hhh",
+    "hhh"
+  ],
+  "key": {
+    "h": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "hybridbeta:hay_bale",
+    "count": 1
+  }
+}

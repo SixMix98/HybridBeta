@@ -1,9 +1,6 @@
 package io.github.SixMix98.hybridbeta.events.init;
 
-import io.github.SixMix98.hybridbeta.block.BrickSlabBlock;
-import io.github.SixMix98.hybridbeta.block.CoalBlock;
-import io.github.SixMix98.hybridbeta.block.LiquidSpawnerBlock;
-import io.github.SixMix98.hybridbeta.block.RedstoneBlock;
+import io.github.SixMix98.hybridbeta.block.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -20,6 +17,7 @@ public class BlockListener {
     public static Block BRICK_DOUBLE_SLAB;
     public static Block WATER_SPAWNER;
     public static Block LAVA_SPAWNER;
+    public static Block HAY_BALE;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -31,6 +29,7 @@ public class BlockListener {
         LAVA_SPAWNER = new LiquidSpawnerBlock(InitListener.NAMESPACE.id("lava_spawner"), Material.LAVA).setHardness(0.0f).setLuminance(1.0f).setOpacity(255).setTranslationKey(InitListener.NAMESPACE, "lavaSpawner").disableTrackingStatistics().ignoreMetaUpdates();
         BRICK_SLAB = new BrickSlabBlock(InitListener.NAMESPACE.id("brick_slab"), false).setHardness(2.0f).setResistance(10.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "brickSlab");
         BRICK_DOUBLE_SLAB = new BrickSlabBlock(InitListener.NAMESPACE.id("brick_double_slab"), true).setHardness(2.0f).setResistance(10.0f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "brickDoubleSlab").disableAutoItemRegistration();
+        HAY_BALE = new HayBaleBlock(InitListener.NAMESPACE.id("hay_bale"), Material.PLANT).setHardness(0.5f).setResistance(0.5f).setSoundGroup(Block.DIRT_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "hayBaleBlock");
 
         blocks = new Block[] {
                 REDSTONE_BLOCK,
@@ -40,7 +39,8 @@ public class BlockListener {
                 WATER_SPAWNER,
                 LAVA_SPAWNER,
                 BRICK_SLAB,
-                BRICK_DOUBLE_SLAB
+                BRICK_DOUBLE_SLAB,
+                HAY_BALE
         };
     }
 }

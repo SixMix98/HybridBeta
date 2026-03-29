@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "side": "hybridbeta:block/hay_block_side",
+    "top": "hybridbeta:block/hay_block_top",
+    "bottom": "hybridbeta:block/hay_block_top"
+  }
+}

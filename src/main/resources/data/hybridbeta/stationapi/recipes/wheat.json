@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hybridbeta:hay_bale"
+    }
+  ],
+  "result": {
+    "item": "minecraft:wheat",
+    "count": 9
+  }
+}
