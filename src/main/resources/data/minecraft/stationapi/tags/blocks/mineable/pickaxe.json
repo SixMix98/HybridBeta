@@ -1,5 +1,6 @@
 {
   "values": [
+    "minecraft:furnace",
     "hybridbeta:redstone_block",
     "hybridbeta:coal_block",
     "hybridbeta:brick_stairs",

@@ -1,6 +1,11 @@
 {
   "values": [
     "minecraft:oak_stairs",
+    "minecraft:crafting_table",
+    "minecraft:fence",
+    "minecraft:door",
+    "minecraft:trapdoor",
+    "minecraft:sign",
     "hybridbeta:fence_gate",
     "hybridbeta:open_fence_gate"
   ]
