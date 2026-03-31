@@ -1,9 +1,8 @@
 package io.github.SixMix98.hybridbeta.block;
 
+import io.github.SixMix98.hybridbeta.events.init.BlockListener;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.world.World;
-import net.modificationstation.stationapi.api.registry.BlockRegistry;
 import net.modificationstation.stationapi.api.template.block.BlockTemplate;
 import net.modificationstation.stationapi.api.template.block.TemplateSlabBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
@@ -24,16 +23,13 @@ public class BrickSlabBlock extends TemplateSlabBlock implements BlockTemplate {
         // Placing on top of another slab creates a double slab
         int n = world.getBlockId(x, y - 1, z);
         if (n == this.id) {
-            Block fullSlab = BlockRegistry.INSTANCE.get(this.id+1);
-            if (fullSlab != null) {
-                world.setBlock(x, y, z, 0);
-                world.setBlock(x, y-1, z, fullSlab.id);
-            }
+            world.setBlock(x, y, z, 0);
+            world.setBlock(x, y-1, z, BlockListener.BRICK_DOUBLE_SLAB.id);
         }
     }
 
     public int getDroppedItemId(int blockMeta, Random random) {
-        return Item.BRICK.id;
+        return Block.BRICKS.id;
     }
 
 }
