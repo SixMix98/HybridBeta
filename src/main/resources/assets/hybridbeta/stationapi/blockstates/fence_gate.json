@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "direction=true": { "model": "hybridbeta:block/fence_gate", "y": 0 },
+    "direction=false": { "model": "hybridbeta:block/fence_gate", "y": 90 }
+  }
+}

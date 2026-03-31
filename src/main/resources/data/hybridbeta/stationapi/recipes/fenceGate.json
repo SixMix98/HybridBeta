@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sws",
+    "sws"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "hybridbeta:fence_gate",
+    "count": 1
+  }
+}

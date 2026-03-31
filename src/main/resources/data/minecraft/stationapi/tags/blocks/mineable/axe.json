@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:oak_stairs"
+    "minecraft:oak_stairs",
+    "hybridbeta:fence_gate",
+    "hybridbeta:open_fence_gate"
   ]
 }

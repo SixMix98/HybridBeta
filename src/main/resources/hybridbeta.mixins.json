@@ -13,7 +13,8 @@
     "GhastEntityMixin",
     "LockedChestBlockMixin",
     "BowItemMixin",
-    "PlayerEntityRendererMixin"
+    "PlayerEntityRendererMixin",
+    "BlockRenderManagerMixin"
   ],
   "server": [
   ],
