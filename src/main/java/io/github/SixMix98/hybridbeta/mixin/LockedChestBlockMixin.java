@@ -9,8 +9,6 @@ import java.util.Random;
 @Mixin(LockedChestBlock.class)
 public class LockedChestBlockMixin {
     // Locked chests do not automatically despawn
-    public void onTick(World world, int x, int y, int z, Random random) {
-
-    }
+    public void onTick(World world, int x, int y, int z, Random random) {}
 
 }
