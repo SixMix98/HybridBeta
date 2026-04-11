@@ -15,7 +15,11 @@
     "LockedChestBlockMixin",
     "BowItemMixin",
     "PlayerEntityRendererMixin",
-    "BlockRenderManagerMixin"
+    "BlockRenderManagerMixin",
+    "ItemEntityMixin",
+    "ClientPlayerEntityMixin",
+    "CraftingResultSlotMixin",
+    "SkeletonEntityMixin"
   ],
   "server": [
   ],

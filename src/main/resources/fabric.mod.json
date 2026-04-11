@@ -24,6 +24,7 @@
       "io.github.SixMix98.hybridbeta.events.init.FuelListener",
       "io.github.SixMix98.hybridbeta.events.init.EntityListener",
       "io.github.SixMix98.hybridbeta.events.init.client.EntityRenderers",
+      "io.github.SixMix98.hybridbeta.events.init.AchievementListener",
       "io.github.SixMix98.hybridbeta.events.init.ItemListener"
     ],
     "stationapi:event_bus_client": [
