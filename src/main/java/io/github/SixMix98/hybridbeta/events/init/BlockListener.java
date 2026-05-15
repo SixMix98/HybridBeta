@@ -20,6 +20,8 @@ public class BlockListener {
     public static Block HAY_BALE;
     public static Block FENCE_GATE;
     public static Block OPEN_FENCE_GATE;
+    public static Block SMOKER;
+    public static Block LIT_SMOKER;
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
@@ -34,6 +36,8 @@ public class BlockListener {
         HAY_BALE = new HayBaleBlock(InitListener.NAMESPACE.id("hay_bale"), Material.PLANT).setHardness(0.5f).setResistance(0.5f).setSoundGroup(Block.DIRT_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "hayBaleBlock");
         FENCE_GATE = new FenceGateBlock(InitListener.NAMESPACE.id("fence_gate"), Block.PLANKS.id).setHardness(2.0f).setResistance(3.0f).setSoundGroup(Block.WOOD_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "fenceGateBlock").disableTrackingStatistics().ignoreMetaUpdates();
         OPEN_FENCE_GATE = new FenceGateBlock(InitListener.NAMESPACE.id("open_fence_gate"), Block.PLANKS.id).setHardness(2.0f).setResistance(3.0f).setSoundGroup(Block.WOOD_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "fenceGateBlockOpen").disableTrackingStatistics().ignoreMetaUpdates().disableAutoItemRegistration();
+        SMOKER = new SmokerBlock(InitListener.NAMESPACE.id("smoker"), false).setHardness(3.5f).setSoundGroup(Block.STONE_SOUND_GROUP).setTranslationKey(InitListener.NAMESPACE, "smokerBlock").ignoreMetaUpdates();
+        LIT_SMOKER = new SmokerBlock(InitListener.NAMESPACE.id("lit_smoker"), true).setHardness(3.5f).setSoundGroup(Block.STONE_SOUND_GROUP).setLuminance(0.875f).setTranslationKey(InitListener.NAMESPACE, "smokerBlock").ignoreMetaUpdates().disableAutoItemRegistration();
 
         blocks = new Block[] {
                 REDSTONE_BLOCK,
@@ -46,7 +50,8 @@ public class BlockListener {
                 BRICK_DOUBLE_SLAB,
                 HAY_BALE,
                 FENCE_GATE,
-                OPEN_FENCE_GATE
+                OPEN_FENCE_GATE,
+                SMOKER
         };
     }
 }

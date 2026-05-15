@@ -19,7 +19,8 @@
     "ItemEntityMixin",
     "ClientPlayerEntityMixin",
     "CraftingResultSlotMixin",
-    "SkeletonEntityMixin"
+    "SkeletonEntityMixin",
+    "PlayerEntityMixin"
   ],
   "server": [
   ],

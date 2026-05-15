@@ -16,7 +16,7 @@ public class PickaxeItemMixin extends ToolItem {
 
     // Expands which blocks can be mined by pickaxes
     static {
-        pickaxeEffectiveBlocks = new Block[]{Block.COBBLESTONE, Block.DOUBLE_SLAB, Block.SLAB, Block.STONE, Block.SANDSTONE, Block.MOSSY_COBBLESTONE, Block.IRON_ORE, Block.IRON_BLOCK, Block.COAL_ORE, Block.GOLD_BLOCK, Block.GOLD_ORE, Block.DIAMOND_ORE, Block.REDSTONE_ORE, Block.LIT_REDSTONE_ORE, Block.DIAMOND_BLOCK, Block.ICE, Block.NETHERRACK, Block.LAPIS_ORE, Block.LAPIS_BLOCK, Block.COBBLESTONE_STAIRS, Block.DISPENSER, Block.BRICKS, Block.FURNACE};
+        pickaxeEffectiveBlocks = new Block[]{Block.COBBLESTONE, Block.DOUBLE_SLAB, Block.SLAB, Block.STONE, Block.SANDSTONE, Block.MOSSY_COBBLESTONE, Block.IRON_ORE, Block.IRON_BLOCK, Block.COAL_ORE, Block.GOLD_BLOCK, Block.GOLD_ORE, Block.DIAMOND_ORE, Block.REDSTONE_ORE, Block.LIT_REDSTONE_ORE, Block.DIAMOND_BLOCK, Block.ICE, Block.NETHERRACK, Block.LAPIS_ORE, Block.LAPIS_BLOCK, Block.COBBLESTONE_STAIRS, Block.DISPENSER, Block.BRICKS, Block.FURNACE, Block.LIT_FURNACE};
     }
 
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+    "lfl",
+    " l "
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:log"
+    },
+    "f": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "hybridbeta:smoker",
+    "count": 1
+  }
+}

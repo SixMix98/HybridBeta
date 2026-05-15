@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hybridbeta:block/smoker"
+    },
+    "facing=east": {
+      "model": "hybridbeta:block/smoker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hybridbeta:block/smoker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hybridbeta:block/smoker",
+      "y": 270
+    }
+  }
+}

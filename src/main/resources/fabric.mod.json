@@ -25,7 +25,8 @@
       "io.github.SixMix98.hybridbeta.events.init.EntityListener",
       "io.github.SixMix98.hybridbeta.events.init.client.EntityRenderers",
       "io.github.SixMix98.hybridbeta.events.init.AchievementListener",
-      "io.github.SixMix98.hybridbeta.events.init.ItemListener"
+      "io.github.SixMix98.hybridbeta.events.init.ItemListener",
+      "io.github.SixMix98.hybridbeta.events.init.BlockEntityListener"
     ],
     "stationapi:event_bus_client": [
     ],

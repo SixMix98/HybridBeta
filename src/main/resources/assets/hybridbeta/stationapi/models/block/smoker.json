@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "hybridbeta:block/smoker_side",
+    "east": "hybridbeta:block/smoker_front",
+    "south": "hybridbeta:block/smoker_side",
+    "west": "hybridbeta:block/smoker_side",
+    "up": "hybridbeta:block/smoker_top",
+    "down": "hybridbeta:block/smoker_bottom",
+    "particle": "hybridbeta:block/smoker_side"
+  }
+}
